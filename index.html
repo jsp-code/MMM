@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./app/imagens/app/mmm.png" />
+    <title>Meus Mapas Mentais</title>
+    <link rel="stylesheet" href="./app/css/fontes.css">
+    <link rel="stylesheet" href="./app/css/estilo.css">
+    
+</head>
+<body>
+    <div id="menu">
+        <ul id='menu_op'>
+            <li>
+                <ul>Arquivo</ul>    
+                <ul id="arquivo">
+                    <li id='novo'>novo</li>
+                    <li id='abrir'>abrir</li>
+                    <li id="salvar">salvar</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="menu_lateral">
+
+        <div id="molde_null">
+            Selecionar
+        </div>
+
+        <div id="molde_bloco_tema">
+            Tema
+        </div>
+
+        <div id="molde_bloco_texto">
+            Bloco Texto
+        </div>
+
+        <div id="prop_select">
+            <button id="deletar">deletar</button>
+            <button id="conectar">conectar</button>
+        </div>
+
+    </div>
+    <div id="tela">
+
+        <div id="fundo">
+            <img src="./app/imagens/app/meusMapasMentais.svg" style="z-index:0;opacity: 0.6;width: 300px;margin-left:850px;margin-top: 800px;pointer-events:none;position: absolute;">
+            <div class ="objetos" style="">
+            
+            </div>
+        </div>
+        
+    </div>
+    <script src="renderer.js" type="module"></script>
+    
+</body>
+</html>

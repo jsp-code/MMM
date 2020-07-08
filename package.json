@@ -1,0 +1,29 @@
+{
+  "name": "meus_mapas_mentais",
+  "version": "1.0.0",
+  "description": "primeiro_projeto",
+  "main": "main.js",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+    "build",
+    "build_win"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-installer-debian": "^3.1.0",
+    "electron-packager": "^14.2.1"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager .  Meus_Mapas_Mentais.AppImage --platform=linux --arch=x64 --icon=/resources/icon/icon.svg",
+    "builddeb64": "electron-packager . meus_mapas_mentais --platform=linux --arch=x64 ",
+    "packgdeb64": "electron-installer-debian --src meus_mapas_mentais-linux-x64/ --dest install/ --arch amd64 --icon app/imagens/app/meusMapasMentais.svg"
+  },
+  "author": "Julimar_Simoes_de_Paula",
+  "license": "ISC"
+}
